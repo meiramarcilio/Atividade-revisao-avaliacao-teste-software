@@ -56,9 +56,7 @@ describe('Hotel Guest Registration', () => {
         cy.get('#register')
             .click();
 
-        cy.contains(
-            'Invalid guest data'
-        ).should('be.visible');
+        cy.contains('Invalid guest data').should('be.visible');
     });
 
 
